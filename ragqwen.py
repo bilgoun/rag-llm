@@ -22,7 +22,7 @@ tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
 config = QWenConfig.from_pretrained(model_name, trust_remote_code=True)
 embedder = AutoModel.from_pretrained(model_name, config=config trust_remote_code=True).to(device)
 
-file_path = '/home/orgil/ai-lab/research/output.txt'
+file_path = '/home/bilguun/ai-lab/research/output.txt'
 with open(file_path, 'r', encoding='utf-8') as f:
     text = f.read().strip()
 
